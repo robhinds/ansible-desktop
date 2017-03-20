@@ -1,6 +1,6 @@
 - hosts: all
   roles:
-    - role: smola.java
+    - role: oracle-java
       become: yes
       java_packages:
         - oracle-java8-installer
