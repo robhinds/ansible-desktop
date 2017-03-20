@@ -1,0 +1,6 @@
+---
+# installing maven
+
+- name: Maven | Installing Maven
+  command: bash -lc "sdk install maven"
+

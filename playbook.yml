@@ -1,9 +1,12 @@
 - hosts: all
   roles:
     - role: oracle-java
-      become: yes
+      become: true
       java_packages:
         - oracle-java8-installer
     - role: gradle
     - role: groovy
     - role: scala
+    - role: maven
+    - role: docker
+      become: true
