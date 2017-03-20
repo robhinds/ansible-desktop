@@ -1,0 +1,20 @@
+---
+# installing sdkman
+
+- name: SDKMan | apt-get update
+  become: yes
+  apt: update_cache=yes
+  
+- name: SDKMan | Install unzip
+  become: yes
+  apt: pkg=unzip state=latest
+
+- name: SDKMan | Install curl
+  become: yes
+  apt: pkg=curl state=latest
+
+- name: SDKMan | fetch the SDKMan install
+  shell: 'curl -s "https://get.sdkman.io" | bash'
+
+- name: SDKMan | Add sdkman in .bashrc
+  lineinfile: dest=$HOME/.bashrc regexp="\/.sdkman/bin\/sdkman\-init\.sh" line='[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" && ! $(which sdkman-init.sh) ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"'
