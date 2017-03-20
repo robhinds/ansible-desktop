@@ -1,0 +1,6 @@
+---
+# installing gradle
+
+- name: Gradle | Installing gradle
+  command: bash -lc "sdk install gradle {{gradle_version}}"
+

@@ -1,0 +1,6 @@
+---
+# installing groovy
+
+- name: Groovy | Installing groovy
+  command: bash -lc "sdk install groovy"
+

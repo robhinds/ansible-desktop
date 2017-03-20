@@ -1,0 +1,17 @@
+---
+
+galaxy_info:
+  author: Rob Hinds
+  description: Install latest version of Groovy using SDKMan
+  min_ansible_version: 1.7.0
+  license: MIT
+  platforms:
+  - name: Ubuntu
+    versions:
+    - 16.0.4
+  categories:
+  - system
+  - development
+
+dependencies:
+  - sdkman

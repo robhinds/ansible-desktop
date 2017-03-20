@@ -4,4 +4,6 @@
       become: yes
       java_packages:
         - oracle-java8-installer
-    - role: sdkman
+    - role: gradle
+    - role: groovy
+    - role: scala

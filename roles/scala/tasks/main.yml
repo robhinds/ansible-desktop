@@ -1,0 +1,6 @@
+---
+# installing latests version of Scala
+
+- name: Scala | Installing Scala
+  command: bash -lc "sdk install scala"
+
