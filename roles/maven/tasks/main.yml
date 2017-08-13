@@ -2,5 +2,4 @@
 # installing maven
 
 - name: Maven | Installing Maven
-  command: bash -lc "sdk install maven"
-
+  command: bash -lc ". $HOME/.sdkman/bin/sdkman-init.sh && sdk install maven"

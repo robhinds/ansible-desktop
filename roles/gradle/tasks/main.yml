@@ -2,5 +2,4 @@
 # installing gradle
 
 - name: Gradle | Installing gradle
-  command: bash -lc "sdk install gradle {{gradle_version}}"
-
+  command: bash -lc ". $HOME/.sdkman/bin/sdkman-init.sh && sdk install gradle {{gradle_version}}"

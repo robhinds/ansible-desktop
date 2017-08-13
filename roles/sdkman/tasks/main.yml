@@ -16,5 +16,8 @@
 - name: SDKMan | fetch the SDKMan install
   shell: 'curl -s "https://get.sdkman.io" | bash'
 
-- name: SDKMan | Add sdkman in .bashrc
+- name: SDKMan | make it available immediately
   lineinfile: dest=$HOME/.bashrc regexp="\/.sdkman/bin\/sdkman\-init\.sh" line='[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" && ! $(which sdkman-init.sh) ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"'
+
+- name: SDKMan | check version
+  command: bash -lc ". $HOME/.sdkman/bin/sdkman-init.sh && sdk version"

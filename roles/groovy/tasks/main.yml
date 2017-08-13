@@ -2,5 +2,4 @@
 # installing groovy
 
 - name: Groovy | Installing groovy
-  command: bash -lc "sdk install groovy"
-
+  command: bash -lc ". $HOME/.sdkman/bin/sdkman-init.sh && sdk install groovy"

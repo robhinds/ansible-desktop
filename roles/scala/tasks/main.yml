@@ -2,5 +2,4 @@
 # installing latests version of Scala
 
 - name: Scala | Installing Scala
-  command: bash -lc "sdk install scala"
-
+  command: bash -lc ". $HOME/.sdkman/bin/sdkman-init.sh && sdk install scala"
